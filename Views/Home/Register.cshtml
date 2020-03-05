@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+        <div>
+            <h1>@ViewData["Response"]</h1>
+            <div>
+                <!-- Login Form -->
+                @using (Html.BeginForm("Register", "Home", FormMethod.Post))
+                {
+            <span>
+                <table border="0" class="border border-dark justify-content-center mx-auto">
+                    <tbody class="w-50">
+                        <tr>
+                            <td>
+                                Email:<br>
+                                <input type="text" id="email" class="fadeIn second" name="email" placeholder="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Password:<br>
+                                <input type="text" id="password" class="fadeIn third" name="password" placeholder="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                FirstName:<br>
+                                <input type="text" id="firstName" class="fadeIn third" name="firstName" placeholder="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                LastName:<br>
+                                <input type="text" id="lastName" class="fadeIn third" name="lastName" placeholder="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Mobile:<br>
+                                <input type="text" id="mobile" class="fadeIn third" name="mobile" placeholder="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                CountryID:<br>
+                                <input type="text" id="countryID" class="fadeIn third" name="countryID" placeholder="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                aID:<br>
+                                <input type="text" id="aID" class="fadeIn third" name="aID" placeholder="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                SignupIP:<br>
+                                <input type="text" id="signupIP" class="fadeIn third" name="signupIP" placeholder="">
+                            </td>
+                        </tr>
+                        <tr><td align="center"><input type="submit" class="fadeIn fourth" value="Submit"></td></tr>
+                    </tbody>
+                </table>
+            </span>
+                }
+            </div>
+        </div>

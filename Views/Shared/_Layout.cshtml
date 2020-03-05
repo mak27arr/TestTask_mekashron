@@ -8,26 +8,25 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    <hr>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
+                @Html.ActionLink("LOGO", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <table border="0" align="right">
+                    <tr>
+                        <td class="text-dark">@Html.ActionLink("Menu 1", "Index", "Home")</td>
+                        <td> | </td>
+                        <td>@Html.ActionLink("Menu 2", "Register", "Home")</td>
+                        <td> | </td>
+                        <td>@Html.ActionLink("Menu 2", "Contact", "Home")</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <hr>
+    <div class="container body-content justify-content-center">
         @RenderBody()
         <hr />
         <footer>
